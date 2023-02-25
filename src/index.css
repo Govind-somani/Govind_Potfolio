@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.read-or-hide{
+  color: rgb(192,192,192);
+  cursor: pointer;
+}

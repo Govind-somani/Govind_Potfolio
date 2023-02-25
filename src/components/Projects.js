@@ -1,43 +1,22 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/forth project.jpg";
-import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/project1.jpg";
-import projImg4 from "../assets/img/first work.jpg";
-import projImg5 from "../assets/img/fifth work.jpg";
-import projImg6 from "../assets/img/12345.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useEffect, useState } from "react";
+import Response from "../Services/response.json";
 
 export const Projects = () => {
-  const projects = [
-    {
-      ProjectCategory: "MCC App and Vodafone",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg4,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
-    },
-  ];
+  const [data, setData] = useState([]);
+  const [company, setCompany] = useState([]);
+  const [expirence, setExpirence] = useState([]);
+  // console.log("response ", Response.data.workExperence.project);
+  useEffect(() => {
+    setData(Response.data.workExperence.project);
+    setCompany(Response.data.workExperence.company);
+    setExpirence(Response.data.workExperence.project1);
+  }, []);
 
   return (
     <section className="project" id="project">
@@ -67,8 +46,8 @@ export const Projects = () => {
                       </Nav.Item>
                       {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
+                      </Nav.Item> */}
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
                       </Nav.Item> */}
                     </Nav>
@@ -79,29 +58,84 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                        <div>
+                          {company.map((item) => (
+                            <>
+                              <h4>
+                                {item.name}{" "}
+                                <span style={{ paddingLeft: "370px" }}>
+                                  {item.dateOfJoining} {item.str}{" "}
+                                  {item.dateOfLeaving}
+                                </span>
+                              </h4>
+                              <p
+                                style={{
+                                  paddingRight: "930px",
+                                }}
+                              >
+                                {item.designation}
+                              </p>
+                            </>
+                          ))}
+                        </div>
+                        <Row
+                          style={{
+                            // justifyContent: "center",
+                            paddingBottom: "10px",
+                          }}
+                        >
+                          {data.map((project, index) => {
+                            return (
+                              <Col md={4} className="project-card">
+                                <ProjectCard
+                                  category={project.category}
+                                  title={project.title}
+                                  description={project.description}
+                                  technology={project.technology}
+                                />
+                              </Col>
+                            );
                           })}
                         </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <div>
+                          {company?.map((item) => (
+                            <>
+                              <h4>
+                                {item[0]?.name}{" "}
+                                <span style={{ paddingLeft: "540px" }}>
+                                  {item[0]?.dateOfJoining} {item[0]?.str}{" "}
+                                  {item[0]?.dateOfLeaving}
+                                </span>
+                              </h4>
+                              <p
+                                style={{
+                                  paddingRight: "930px",
+                                }}
+                              >
+                                {item[0]?.designation}
+                              </p>
+                            </>
+                          ))}
+                        </div>
+                        <Row
+                          style={{
+                            // justifyContent: "center",
+                            paddingBottom: "10px",
+                          }}
+                        >
+                          {expirence.map((project, index) => {
+                            return (
+                              <Col md={4} className="project-card">
+                                <ProjectCard
+                                  category={project?.category}
+                                  title={project?.title || ""}
+                                  description={project?.description}
+                                  technology={project?.technology}
+                                />
+                              </Col>
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

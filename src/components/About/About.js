@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 import AboutCard from "./AboutCard";
 import laptopImg from "../../assets/img/about.png";
+import Toolstack from "./Toolstack";
+import { ImPointRight } from "react-icons/im";
+import Response from "../../Services/response.json";
 
 const About = () => {
+  const [about, setAbout] = useState([]);
+  // console.log("response ", Response.data.workExperence.project);
+  useEffect(() => {
+    setAbout(Response.data.workExperence.achievement);
+  }, []);
+  console.log("response ", about);
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
@@ -31,22 +40,30 @@ const About = () => {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        {/* <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1> */}
+        <Col>
+          <h1 className="project-heading">
+            Achievements
+            {/* <strong className="purple">Skillset </strong> */}
+          </h1>
 
-        {/* <Techstack />
+          <ul>
+            {about.map((element) => {
+              // console.log(element.description);
+              return (
+                <li className="about-activity">
+                  <ImPointRight />
+                  {element.description}
+                </li>
+              );
+            })}
+          </ul>
+        </Col>
+        <br />
 
-            <h1 className="project-heading">
-              <strong className="purple">Tools</strong> I use
-            </h1>
-            <Toolstack /> 
-
-        {/* <Github /> */}
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        {/* <Toolstack />  */}
+        <Toolstack />
       </Container>
     </Container>
   );

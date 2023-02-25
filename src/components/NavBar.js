@@ -33,7 +33,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/banner">
+          <Navbar.Brand href="/">
             {/* <img src={logo} alt="Logo" /> */}
             <span style={{ color: "white" }}>Govind</span>
           </Navbar.Brand>
@@ -43,7 +43,7 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="/banner"
+                href="/"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }

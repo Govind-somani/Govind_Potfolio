@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
+import PageNotFound from "./components/PageNotFound";
 
 const App = () => {
   return (
@@ -19,14 +20,13 @@ const App = () => {
       <NavBar />
       <Router>
         <Routes>
-          {/* <Route exact path="/home" element={<NavBar />} /> */}
-          <Route exact path="/banner" element={<Banner />} />
+          <Route exact path="/" element={<Banner />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
-
           <Route exact path="/footer" element={<Footer />} />
+          <Route exact path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
 
