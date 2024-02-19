@@ -4,54 +4,79 @@
             "company":[
                 {
                     "id":11,
+                    "name":"Witmates Technology Pvt. Ltd. Comapny", 
+                    "designation":"Software Developer",
+                    "dateOfJoining":"06-Apr-2023",
+                    "str":"-",
+                    "dateOfLeaving":"16-feb-2024",
+                    "projects": [
+                        {
+                        "id": 1,
+                        "title":"Builder.ai",
+                        "category":"TicketXchange",
+                        "description":"Designed the front-end applications, user interactive (UI) Mobile pages using web technologies like HTML, and CSS. Developed, Web services calls  for the application. Responsible for design and development of mobile pages from mock-ups (PSD).Worked on Front end by using JavaScript.  equipped me with valuable experience in integrating third-party libraries like the CashFree payment gateway and collaborating closely with team members to identify and resolve software bugs promptly. Additionally, my involvement in projects like 'Ecommerce' further solidified my expertise in frontend development, API integration, and unit testing",
+                        "technology":"React js, Material-ui, JS, Bootstrap, Unit Testing, Git, Tracker "
+                    },
+                    {
+                        "id":2 ,
+                        "category":"E-commerece",
+                        "title":"E-commerece",
+                        "description":"Designed the front-end Applications, user interactive (UI) web pages using web technologies like HTML, Bootstrap and CSS Developed React.js pages, Web services calls for the application Workplace is Made for the their employees there they will we order the product when they want to visit to the eCommerce web application. Used the context API for the API integration. Used web- based GIT repository manager with issue tracking features. Used the 3rd party library for payment gateway like Roza pay.",
+                        "technology":"React js, Redux, Material-ui, JS, Bootstrap, Context API, Git, HTML"      
+                    }
+                ]
+                 },
+                {
+                    "id":12,
                     "name":"The Rapid Hire Pvt. Ltd. Company", 
                     "designation":"Software Developer",
                     "dateOfJoining":"19-Oct-2021",
                     "str":"-",
-                    "dateOfLeaving":"20-Jan-2023"
+                    "dateOfLeaving":"20-Jan-2023",
+                    "projects": [
+                        {
+                        "id": 1,
+                        "title":"Tenerity",
+                        "category":"MCC and Vodofone",
+                        "description":"Designed the front-end applications, user interactive (UI) Mobile pages using web technologies like HTML, XHTML, and CSS. Developed React Native pages, Web services calls and AJAX calls for the application. Responsible for design and development of mobile pages from mock-ups (PSD).Worked on Front end by using JavaScript. Developed user interface by using the React Native, Flux for SPA development. Implemented client-side Interface using React Native. Used web-based GIT  repository manager with issue tracking features. The App is for secured Because it used for to generate the offers prospective.",
+                        "technology":"React js, Redux, Material-ui, React Native, JS, Bootstrap, Java, Springboot, Microservices"
+                    },
+                    {
+                        "id":2 ,
+                        "category":"Workplace",
+                        "title":"LinkedIn",
+                        "description":"Designed the front-end Applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React.js pages, Web services calls and AJAX calls for the application Workplace is Made for the their employees there they will we book the meeting room, meeting schedule, order food and etc. when they want to visit office for the work so before they can book this and this things. Used in development of the web application to bind the data/model that is being retrieved from a database through services provided in a controller to the view using scope. Used web-based GIT repository manager with issue tracking features.",
+                        "technology":"React js, Redux, Material-ui, JS, Bootstrap, Java, Springboot, Microservices"
+            
+                    },
+                    {
+                        "id": 3,
+                        "category":"Standard Bank",
+                        "title":"Standard Bank",
+                        "description":"Designed the front-end applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React Native pages, Web services calls and AJAX calls for the application. Responsible for design and development of mobile pages from mock-ups (PSD).Worked on Front end by using JavaScript. Developed user interface by using the React Native, Flux for SPA development. Implemented client-side Interface using React Native .Used web-based GIT repository manager with issue tracking features. The App is for secured Because it used for Bank prospective. Interfaced with engineering and product team professionals to identify the consumer and user goals for specific webapplications. Created 25+ BRD and technical documents to track and measure development processes.",
+                        "technology":"React js, Redux, Material-ui, React Native, JS, Bootstrap, Java, Springboot, Microservices, Node Js, Block-Chain and Libra Validation"
+            
+                    }
+                     ]
                  },
-                 [{
-                    "id":12,
+                 {
+                    "id":13,
                     "name":"OsiyaTech Company", 
                     "designation":"Software Developer",
                     "dateOfJoining":"18-Jan-2021",
                     "str":"-",
-                    "dateOfLeaving":"10-Oct-2021"
-                 }]
+                    "dateOfLeaving":"10-Oct-2021",
+                    "projects":[{
+                        "id": 1,
+                        "category":"Stash.ee",
+                        "title":"Product",
+                        "description":"Project involved providing a platform where users can create biolinks that can be shared over internet. Developed a web app where users can provide all details and show these details in biolinks. Designed the front-end applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React Web pages, Web services calls and Graph Ql and Redux calls for the application. Installed new API endpoints to accomplish objectives from internal web applications, such as providing connectivity that improved system functionality and managed complex code. Managed requisite gathering and validation gathering processes to develop large-scale web application projects.Outlined and executed a clear set of technical requirements through a collaborative effort..",
+                        "technology":"React js, Redux, Material-ui, JS, Bootstrap, Node Js, Postgress, GraphQL, TypeScript "
+                
+                    }]
+                 }
                 ],
-        "project": [
-            {
-            "id": 1,
-            "title":"Tenerity",
-            "category":"MCC and Vodofone",
-            "description":"Designed the front-end applications, user interactive (UI) Mobile pages using web technologies like HTML, XHTML, and CSS. Developed React Native pages, Web services calls and AJAX calls for the application. Responsible for design and development of mobile pages from mock-ups (PSD).Worked on Front end by using JavaScript. Developed user interface by using the React Native, Flux for SPA development. Implemented client-side Interface using React Native. Used web-based GIT  repository manager with issue tracking features. The App is for secured Because it used for to generate the offers prospective.",
-            "technology":"React js, Redux, Material-ui, React Native, JS, Bootstrap, Java, Springboot, Microservices"
-        },
-        {
-            "id":2 ,
-            "category":"Workplace",
-            "title":"LinkedIn",
-            "description":"Designed the front-end Applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React.js pages, Web services calls and AJAX calls for the application Workplace is Made for the their employees there they will we book the meeting room, meeting schedule, order food and etc. when they want to visit office for the work so before they can book this and this things. Used in development of the web application to bind the data/model that is being retrieved from a database through services provided in a controller to the view using scope. Used web-based GIT repository manager with issue tracking features.",
-            "technology":"React js, Redux, Material-ui, JS, Bootstrap, Java, Springboot, Microservices"
-
-        },
-        {
-            "id": 3,
-            "category":"Standard Bank",
-            "title":"Standard Bank",
-            "description":"Designed the front-end applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React Native pages, Web services calls and AJAX calls for the application. Responsible for design and development of mobile pages from mock-ups (PSD).Worked on Front end by using JavaScript. Developed user interface by using the React Native, Flux for SPA development. Implemented client-side Interface using React Native .Used web-based GIT repository manager with issue tracking features. The App is for secured Because it used for Bank prospective. Interfaced with engineering and product team professionals to identify the consumer and user goals for specific webapplications. Created 25+ BRD and technical documents to track and measure development processes.",
-            "technology":"React js, Redux, Material-ui, React Native, JS, Bootstrap, Java, Springboot, Microservices, Node Js, Block-Chain and Libra Validation"
-
-        }
-    ],
-    "project1":[{
-        "id": 1,
-        "category":"Stash.ee",
-        "title":"Product",
-        "description":"Project involved providing a platform where users can create biolinks that can be shared over internet. Developed a web app where users can provide all details and show these details in biolinks. Designed the front-end applications, user interactive (UI) web pages using web technologies like HTML, XHTML, and CSS. Developed React Web pages, Web services calls and Graph Ql and Redux calls for the application. Installed new API endpoints to accomplish objectives from internal web applications, such as providing connectivity that improved system functionality and managed complex code. Managed requisite gathering and validation gathering processes to develop large-scale web application projects.Outlined and executed a clear set of technical requirements through a collaborative effort..",
-        "technology":"React js, Redux, Material-ui, JS, Bootstrap, Node Js, Postgress, GraphQL, TypeScript "
-
-    }],
+   
     "achievement":[
         {
             "id":1,

@@ -43,6 +43,7 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
+                autoPlay
               >
                 <div className="item">
                   <img src={meter1} alt="mage" />
@@ -53,7 +54,7 @@ export const Skills = () => {
                   <h5>English</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="mage" />
+                  <img src={meter1} alt="mage" />
                   <h5>React Js</h5>
                 </div>
                 <div className="item">
@@ -65,8 +66,32 @@ export const Skills = () => {
                   <h5>Redux</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="mage" />
+                  <img src={meter2} alt="mage" />
                   <h5>MERN Stack Developer</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>Git</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>REST API</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>Context API</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>JIRA</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>Mongo DB</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="mage" />
+                  <h5>MY SQL</h5>
                 </div>
               </Carousel>
             </div>

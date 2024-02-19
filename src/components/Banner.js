@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useNavigate } from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,6 +14,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = ["Software Enginnering", "Team Leader"];
   const period = 2000;
+  const navigate = useNavigate();
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -50,7 +52,9 @@ export const Banner = () => {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
-
+  const handleContact = () => {
+    navigate("/contact");
+  };
   return (
     <section className="banner" id="home">
       <Container>
@@ -69,18 +73,32 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Software Enginnering", "Team Leader" ]'
+                      data-rotate='[ "Sr. Software Enginnering", "Team Leader" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>
-                    My fullname is Govind Somani. I'm 24 years old. I study MCA
-                    from the Medicaps University.I am a front-end web developer.
-                    I can make the website more, more interactive with web
-                    animation. I have 2 year of expirence in react js.
+                  <p style={{ fontFamily: "Poppins" }}>
+                    My fullname is Govind Somani.I am experienced Software
+                    Developer with over three years of expertise in designing
+                    and developing web applications, specializing in React JS
+                    and related technologies. Proficient in building responsive
+                    web pages using frameworks like MUI and Bootstrap. Skilled
+                    in understanding and implementing complex technical
+                    concepts, ensuring timely task delivery while maintaining
+                    quality standards. Experienced in integrating third-party
+                    libraries such as the CashFree payment gateway and
+                    collaborating with team members to identify and resolve
+                    software bugs promptly. Strong educational background with a
+                    Master's in Computer Applications from Medicaps University.
+                    <br />
+                    <br />
+                    <b>Key Skill-</b> React JS Development, Web Application
+                    Design, Responsive Web Development, Frameworks: MUI,
+                    Bootstrap, Third-Party Library Integration, Frontend
+                    Development, API Integration, Unit Testing
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={() => handleContact()}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

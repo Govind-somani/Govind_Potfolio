@@ -5,11 +5,12 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => {
@@ -28,7 +29,9 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
-
+  // const handleContact = () => {
+  //   navigate("/contact");
+  // };
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>

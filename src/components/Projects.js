@@ -11,11 +11,13 @@ export const Projects = () => {
   const [data, setData] = useState([]);
   const [company, setCompany] = useState([]);
   const [expirence, setExpirence] = useState([]);
-  // console.log("response ", Response.data.workExperence.project);
+  const [projects, setProjects] = useState([]);
   useEffect(() => {
-    setData(Response.data.workExperence.project);
-    setCompany(Response.data.workExperence.company);
-    setExpirence(Response.data.workExperence.project1);
+    console.log("response ", Response.data.workExperence.company);
+    // setData(Response.data.workExperence.company.projects);
+    // setCompany(Response.data.workExperence.company);
+    // setExpirence(Response.data.workExperence.project1);
+    setProjects(Response.data.workExperence.company);
   }, []);
 
   return (
@@ -59,11 +61,11 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <div>
-                          {company.map((item) => (
-                            <>
+                          {projects.map((item) => (
+                            <div key={item.id}>
                               <h4>
                                 {item.name}{" "}
-                                <span style={{ paddingLeft: "370px" }}>
+                                <span style={{ paddingLeft: "380px" }}>
                                   {item.dateOfJoining} {item.str}{" "}
                                   {item.dateOfLeaving}
                                 </span>
@@ -75,67 +77,29 @@ export const Projects = () => {
                               >
                                 {item.designation}
                               </p>
-                            </>
-                          ))}
-                        </div>
-                        <Row
-                          style={{
-                            // justifyContent: "center",
-                            paddingBottom: "10px",
-                          }}
-                        >
-                          {data.map((project, index) => {
-                            return (
-                              <Col md={4} className="project-card">
-                                <ProjectCard
-                                  category={project.category}
-                                  title={project.title}
-                                  description={project.description}
-                                  technology={project.technology}
-                                />
-                              </Col>
-                            );
-                          })}
-                        </Row>
-                        <div>
-                          {company?.map((item) => (
-                            <>
-                              <h4>
-                                {item[0]?.name}{" "}
-                                <span style={{ paddingLeft: "540px" }}>
-                                  {item[0]?.dateOfJoining} {item[0]?.str}{" "}
-                                  {item[0]?.dateOfLeaving}
-                                </span>
-                              </h4>
-                              <p
+                              <Row
                                 style={{
-                                  paddingRight: "930px",
+                                  paddingBottom: "10px",
                                 }}
                               >
-                                {item[0]?.designation}
-                              </p>
-                            </>
+                                {item.projects.map((filteredProject, index) => (
+                                  <Col
+                                    md={4}
+                                    className="project-card"
+                                    key={index}
+                                  >
+                                    <ProjectCard
+                                      category={filteredProject.category}
+                                      title={filteredProject.title || ""}
+                                      description={filteredProject.description}
+                                      technology={filteredProject.technology}
+                                    />
+                                  </Col>
+                                ))}
+                              </Row>
+                            </div>
                           ))}
                         </div>
-                        <Row
-                          style={{
-                            // justifyContent: "center",
-                            paddingBottom: "10px",
-                          }}
-                        >
-                          {expirence.map((project, index) => {
-                            return (
-                              <Col md={4} className="project-card">
-                                <ProjectCard
-                                  category={project?.category}
-                                  title={project?.title || ""}
-                                  description={project?.description}
-                                  technology={project?.technology}
-                                />
-                              </Col>
-                            );
-                          })}
-                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

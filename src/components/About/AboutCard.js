@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Govind Somani </span>
-            from <span className="purple"> Makrana (Raj), India.</span>
+            from <span className="purple"> Makrana (Raj), India. Currently I am leaving in Indore (MP)</span>
             <br />
             <br />
             <br />
