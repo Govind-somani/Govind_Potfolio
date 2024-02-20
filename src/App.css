@@ -671,8 +671,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .roles {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  grid-gap: 6px;
 }
 @media (max-width: 767px) {
   .tech-icons {

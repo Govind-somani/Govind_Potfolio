@@ -15,16 +15,15 @@ const About = () => {
     setAbout(Response.data.workExperence.achievement);
     setRoles(Response.data.workExperence.responsibilities);
   }, []);
-  console.log("response ", about);
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
       <Container>
         <div>
           <h2>Roles and Responsilbilities</h2>
-          <ul>
+          <ul className="roles">
             {roles.map((responsibility, index) => (
-              <div key={index} className="roles">
+              <div key={index} >
                 <ImPointRight style={{marginRight: '5px'}}/>
                   {responsibility}
               </div>
