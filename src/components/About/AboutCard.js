@@ -17,15 +17,15 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight />
+            <ImPointRight style={{marginRight: '5px'}}/>
               Playing Computer Games
             </li>
             <li className="about-activity">
-              <ImPointRight />
+            <ImPointRight style={{marginRight: '5px'}}/>
               Chess & Cricket
             </li>
             <li className="about-activity">
-              <ImPointRight />
+            <ImPointRight style={{marginRight: '5px'}}/>
               Travelling
             </li>
           </ul>

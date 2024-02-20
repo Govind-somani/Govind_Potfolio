@@ -94,7 +94,19 @@
              "id":4,
              "description":" Certification in Azure create a REST API using NodeJS Serverless Function by Coursera Project Network."
          }  
-    ]
+    ],
+    "responsibilities" :[
+        "Developing web applications using React and related technologies.",
+        "Designing React JS web pages with responsiveness using MUI and Bootstrap.",
+        "Easy adaptation to new features and technologies.",
+        "Deep understanding of React concepts such as components, state management, lifecycle methods, and hooks.",
+        "Skill Sets include JavaScript & TypeScript, React JS, Redux, Context, and MUI.",
+        "Effective team collaboration and management.",
+        "Daily task delivery.",
+        "Developing new, efficient, and well-tested code for a variety of different software projects.",
+        "Good knowledge of unit testing libraries like Jest and Enzyme.",
+        "Utilizing web-based GIT repository managers with issue tracking features."
+      ]
 }
     }
 }

@@ -9,15 +9,28 @@ import Response from "../../Services/response.json";
 
 const About = () => {
   const [about, setAbout] = useState([]);
+  const [roles, setRoles] = useState([]);
   // console.log("response ", Response.data.workExperence.project);
   useEffect(() => {
     setAbout(Response.data.workExperence.achievement);
+    setRoles(Response.data.workExperence.responsibilities);
   }, []);
   console.log("response ", about);
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
       <Container>
+        <div>
+          <h2>Roles and Responsilbilities</h2>
+          <ul>
+            {roles.map((responsibility, index) => (
+              <div key={index} className="roles">
+                <ImPointRight style={{marginRight: '5px'}}/>
+                  {responsibility}
+              </div>
+            ))}
+          </ul>
+        </div>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -51,7 +64,7 @@ const About = () => {
               // console.log(element.description);
               return (
                 <li className="about-activity">
-                  <ImPointRight />
+                <ImPointRight style={{marginRight: '5px'}}/>
                   {element.description}
                 </li>
               );
