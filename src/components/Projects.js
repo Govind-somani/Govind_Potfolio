@@ -8,15 +8,8 @@ import { useEffect, useState } from "react";
 import Response from "../Services/response.json";
 
 export const Projects = () => {
-  const [data, setData] = useState([]);
-  const [company, setCompany] = useState([]);
-  const [expirence, setExpirence] = useState([]);
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    console.log("response ", Response.data.workExperence.company);
-    // setData(Response.data.workExperence.company.projects);
-    // setCompany(Response.data.workExperence.company);
-    // setExpirence(Response.data.workExperence.project1);
     setProjects(Response.data.workExperence.company);
   }, []);
 
@@ -46,12 +39,6 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="first">Tab 1</Nav.Link>
                       </Nav.Item>
-                      {/* <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item> */}
-                      {/* <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -109,7 +96,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="img" />
     </section>
   );
 };
