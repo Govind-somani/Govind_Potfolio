@@ -33,7 +33,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -342,6 +342,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.projectDesc {
+  display: flex;
+  justify-content: space-between;
+}
 .project {
   padding: 80px 0;
   position: relative;

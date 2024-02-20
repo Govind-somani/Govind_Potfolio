@@ -79,24 +79,37 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p style={{ fontFamily: "Poppins" }}>
-                    My fullname is Govind Somani.I am experienced Software
+                    My name is Govind Somani, and I am an experienced Software
                     Developer with over three years of expertise in designing
-                    and developing web applications, specializing in React JS
-                    and related technologies. Proficient in building responsive
-                    web pages using frameworks like MUI and Bootstrap. Skilled
-                    in understanding and implementing complex technical
-                    concepts, ensuring timely task delivery while maintaining
-                    quality standards. Experienced in integrating third-party
-                    libraries such as the CashFree payment gateway and
-                    collaborating with team members to identify and resolve
-                    software bugs promptly. Strong educational background with a
-                    Master's in Computer Applications from Medicaps University.
+                    and developing web applications. My specialization lies in
+                    React JS and related technologies. I excel in crafting
+                    responsive web pages, leveraging frameworks such as MUI and
+                    Bootstrap.
+                    <br />
+                    <br />
+                    My skill set extends to understanding and implementing
+                    complex technical concepts efficiently, ensuring the timely
+                    delivery of tasks while upholding high-quality standards. I
+                    have a proven track record of integrating third-party
+                    libraries, including the CashFree and Stripe payment
+                    gateway, and adeptly collaborating with team members to
+                    identify and resolve software bugs promptly.
+                    <br />
+                    <br />
+                    My educational background includes a Master's in Computer
+                    Applications from Medicaps University Indore, providing me
+                    with a strong foundation to excel in the field of software
+                    development.
                     <br />
                     <br />
                     <b>Key Skill-</b> React JS Development, Web Application
                     Design, Responsive Web Development, Frameworks: MUI,
                     Bootstrap, Third-Party Library Integration, Frontend
-                    Development, API Integration, Unit Testing
+                    Development, API Integration, Unit Testing, Node JS,
+                    Express, Mongo DB, MySQL.
+                    <br />
+                    <br />
+                    <b>Version Control-</b> BitBucket, GitLab and GitHub.
                   </p>
                   <button onClick={() => handleContact()}>
                     Let’s Connect <ArrowRightCircle size={25} />

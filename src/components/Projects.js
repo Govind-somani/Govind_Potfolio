@@ -47,12 +47,12 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <div>
+                        <div className="">
                           {projects.map((item) => (
-                            <div key={item.id}>
-                              <h4>
+                            <div key={item.id} className="roles">
+                              <h4 className="projectDesc">
                                 {item.name}{" "}
-                                <span style={{ paddingLeft: "380px" }}>
+                                <span>
                                   {item.dateOfJoining} {item.str}{" "}
                                   {item.dateOfLeaving}
                                 </span>

@@ -25,7 +25,7 @@ const About = () => {
             {roles.map((responsibility, index) => (
               <div key={index} >
                 <ImPointRight style={{marginRight: '5px'}}/>
-                  {responsibility}
+                 <span >{responsibility}</span>
               </div>
             ))}
           </ul>
