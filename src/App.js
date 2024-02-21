@@ -23,12 +23,14 @@ const App = () => {
           <Route exact path="/" element={<Banner />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/contact" element={<Contact />} />
+          {/* <Route exact path="/contact" element={<Contact />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/footer" element={<Footer />} />
           <Route exact path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
+
+      <div className="footer">Made with ❤ by Govind</div>
 
       {/* <NavBar />
       <Banner />
